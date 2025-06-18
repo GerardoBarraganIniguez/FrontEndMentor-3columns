@@ -81,3 +81,58 @@ body{
 .card__luxury a{
     color: hsl(179, 100%, 13%);
 }
+
+
+/* Tablets y Desktops */
+@media (width >= 768px){ 
+
+    html,body{
+        height: 100%;
+    }
+
+    .card{
+        flex-direction: row;
+        width: 70%;
+        height: 60%;
+    }
+
+    .card p{
+        margin-bottom: 100px;
+    }
+
+    .card__sedans{
+        border-radius: 8px 0 0 8px;
+
+    }
+    .card__luxury{
+        border-radius: 0 8px 8px 0;
+        
+    }
+}
+
+@media (width >= 1530px){ 
+    
+    .card{
+        max-width: 1200px;
+        max-height: 1200px;
+    }
+
+    .card__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card a{
+        max-width: 150px;
+        text-align: center;
+    }
+    .card__icon{
+        width: 80px;
+    }
+
+    .card p{
+        margin-bottom: 150px;
+    }
+}
+
