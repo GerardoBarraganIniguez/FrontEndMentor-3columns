@@ -46,6 +46,13 @@ body{
     background-color: hsl(0, 0%, 95%);
     padding: 13px 30px;
     border-radius: 30px;
+    border: 2px solid transparent;
+}
+
+.card a:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
 }
 
 .card__item{
