@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+:root {
+    --color-sedans: hsl(31, 77%, 52%);
+    --color-suvs: hsl(184, 100%, 22%);
+    --color-luxury: hsl(179, 100%, 13%);
+    --color-bg: hsl(0, 0%, 95%);
+    --color-text: hsla(0, 0%, 100%, 0.75);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +26,7 @@ body{
     font-weight: 400;
     font-size: 15px;
     font-family: "Outfit", sans-serif;
-    color: hsla(0, 0%, 100%, 0.75); 
+    color: var(--color-text);
 }
 
 .card{
@@ -32,7 +40,7 @@ body{
     font-family: "Big Shoulders", sans-serif;
     font-weight: 700;
     font-size: 27px;
-    color: hsl(0, 0%, 95%);
+    color: var(--color-bg);
     margin-bottom: 25px;
 }
 
@@ -43,7 +51,7 @@ body{
 
 .card a{
     text-decoration: none;
-    background-color: hsl(0, 0%, 95%);
+    background-color: var(--color-bg);
     padding: 13px 30px;
     border-radius: 30px;
     border: 2px solid transparent;
@@ -51,8 +59,8 @@ body{
 
 .card a:hover{
     background-color: transparent;
-    color: hsl(0, 0%, 95%);
-    border-color: hsl(0, 0%, 95%);
+    color: var(--color-bg);
+    border-color: var(--color-bg);
 }
 
 .card__item{
@@ -62,31 +70,45 @@ body{
 .card__icon{
     margin-bottom: 25px;
 }
+.card__suvs{
+    background-color: var(--color-suvs);
+}
 
+.card__suvs a{
+    color: var(--color-suvs);
+}
+
+.card__luxury{
+    background-color: var(--color-luxury);
+}
+
+.card__luxury a{
+    color: var(--color-luxury);
+}
 .card__sedans{
-    background-color: hsl(31, 77%, 52%);
+    background-color: var(--color-sedans);
     border-radius: 8px 8px 0 0;
 }
 
 .card__sedans a{
-    color: hsl(31, 77%, 52%);
+    color: var(--color-sedans);
 }
 
 .card__suvs{
-    background-color: hsl(184, 100%, 22%);
+    background-color: var(--color-suvs);
 }
 
 .card__suvs a{
-    color: hsl(184, 100%, 22%);
+    color: var(--color-suvs);
 }
 
 .card__luxury{
-    background-color: hsl(179, 100%, 13%);
+    background-color: var(--color-luxury);
     border-radius: 0 0 8px 8px;
 } 
 
 .card__luxury a{
-    color: hsl(179, 100%, 13%);
+    color: var(--color-luxury);
 }
 
 
